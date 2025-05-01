@@ -1,0 +1,12 @@
+package com.manic.springcrud.service;
+import com.manic.springcrud.model.Employee;
+
+import java.util.List;
+
+public interface EmployeeService {
+    Employee saveEmployee(Employee employee);
+    List<Employee> getAllEmployee();
+    Employee getEmployeeById(long id);
+    Employee updateEmployee(Employee employee,long id);
+    void deleteEmployee(long id);
+}
